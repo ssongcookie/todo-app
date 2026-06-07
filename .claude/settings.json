@@ -1,0 +1,30 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -ExecutionPolicy Bypass -File D:\\Dev\\Projects\\personal\\todo\\.claude\\load-session.ps1",
+            "shell": "powershell",
+            "timeout": 15,
+            "statusMessage": "세션 인수인계서 로드 중..."
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -ExecutionPolicy Bypass -File D:\\Dev\\Projects\\personal\\todo\\.claude\\generate-handoff.ps1",
+            "shell": "powershell",
+            "timeout": 30,
+            "statusMessage": "세션 인수인계서 생성 중..."
+          }
+        ]
+      }
+    ]
+  }
+}
