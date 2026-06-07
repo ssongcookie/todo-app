@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="glass-card">
+            <h1>할 일 목록</h1>
+
+            <div class="stats">
+                <span>전체 <strong id="total">0</strong></span>
+                <span>완료 <strong id="completedCount">0</strong></span>
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="todoInput" placeholder="새로운 할 일을 입력하세요..." />
+                <button class="btn-add" onclick="addTodo()">추가</button>
+            </div>
+
+            <ul class="todo-list" id="todoList"></ul>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
