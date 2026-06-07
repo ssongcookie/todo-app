@@ -1,5 +1,7 @@
-package com.personal.todo;
+package com.personal.todo.controller;
 
+import com.personal.todo.entity.Todo;
+import com.personal.todo.service.TodoService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

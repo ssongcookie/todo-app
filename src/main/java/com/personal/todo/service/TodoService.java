@@ -1,5 +1,7 @@
-package com.personal.todo;
+package com.personal.todo.service;
 
+import com.personal.todo.repository.TodoRepository;
+import com.personal.todo.entity.Todo;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
